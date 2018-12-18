@@ -1,0 +1,375 @@
+/*reset*/
+html {
+  margin: 0;
+  padding: 0;
+}
+
+article,aside,dialog,footer,header,section,footer,nav,figure,menu {
+	display: block
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, figure, section, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+	margin: 0;
+	padding: 0
+}
+
+body {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+	font: 400 14px/1.5 Arial,"Lucida Grande",Verdana,"Microsoft YaHei",hei;
+	font-family: Arial,Helvetica,sans-serif;
+	background-color: #fff;
+	color: #424242;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-font-smoothing: antialiased;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(0px, 0px) scale(1) translateZ(0px);
+          transform: translate(0px, 0px) scale(1) translateZ(0px);
+}
+
+#root {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#root.webkit-overflow-none {
+	-webkit-overflow-scrolling: initial !important;
+}
+
+.touch-scroll {
+	-webkit-overflow-scrolling: touch;
+}
+
+.outside-wrap {
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+ul,ol,dd,dt,dl {
+	list-style-type: none;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+a,input,select {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-webkit-border-radius: 0;
+}
+
+input,img,button {
+	border: none;
+	padding: 0 !important;
+	font-size: .7rem;
+}
+
+i,em {
+	font-style: normal;
+}
+
+:focus {
+	outline: none
+}
+
+/*原子类*/
+.clear {
+	clear: both;
+}
+
+.clear:after {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+	content: ".";
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.ova {
+  overflow: auto;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.abs {
+	position: absolute;
+}
+
+.rel {
+	position: relative;
+}
+/*placeholder css*/
+::-moz-placeholder {
+	font-family: "Microsoft YaHei"
+}
+
+::-webkit-input-placeholder {
+	font-family: "Microsoft YaHei";
+	font-size: .7rem;
+	color: #ccc;
+}
+
+:-ms-input-placeholder {
+	font-family: "Microsoft YaHei"
+}
+
+/*表单类*/
+input, button, select, textarea {
+	font-family: Arial, "Lucida Grande", Verdana, "Microsoft YaHei", hei;
+	outline: none;
+	-webkit-appearance: none;
+	border-radius: 0;
+	border: 0;
+	background: transparent;
+}
+
+.btn:active {
+	opacity: .7;
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*基础类*/
+.flexbox-r {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.flexbox-r-nocenter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.flexbox-c {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.flexbox-wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex-one {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.color-000 {
+	color: #000;
+}
+.color-333 {
+	color: #333;
+}
+
+.color-666 {
+	color: #666;
+}
+
+.color-gray {
+	color: #999 !important;
+}
+
+.color-999 {
+	color: #999;
+}
+
+.color-orange {
+	color: #FF6913;
+}
+
+.color-blue {
+	color: #18A0F0;
+}
+
+.fontSize-22 {
+	font-size: 1.1rem;
+}
+.fontSize-20 {
+	font-size: 1rem;
+}
+
+.fontSize-18 {
+	font-size: .9rem;
+}
+
+.fontSize-16 {
+	font-size: .8rem;
+}
+
+.fontSize-14 {
+	font-size: .7rem;
+}
+
+.fontSize-12 {
+	font-size: .6rem;
+}
+
+.fontSize-11 {
+	font-size: .55rem;
+}
+
+.fontSize-10 {
+	font-size: .5rem;
+}
+
+.bold {
+	font-family: PingFangSC-Medium;
+	font-weight: bold;
+}
+
+.anchorBL {
+  display: none;
+}
+
+/*图表库*/
+@font-face {
+  font-family: 'iconfont';  /* project id 699601 */
+  src: url('//at.alicdn.com/t/font_699601_iyj83xqadzp.eot');
+  src: url('//at.alicdn.com/t/font_699601_iyj83xqadzp.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_699601_iyj83xqadzp.woff') format('woff'),
+  url('//at.alicdn.com/t/font_699601_iyj83xqadzp.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_699601_iyj83xqadzp.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont-symbol {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  font-size: 1.1rem;
+}

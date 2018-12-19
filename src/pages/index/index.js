@@ -2,6 +2,7 @@ import React, { Fragment, PureComponent } from 'react';
 import { Carousel } from 'antd-mobile';
 
 import Header from '@/components/common/HeaderFixed';
+import Loading from '@/components/common/Loading';
 
 import styles from './index.less';
 

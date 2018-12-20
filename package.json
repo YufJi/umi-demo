@@ -32,6 +32,7 @@
   "engines": {
     "node": ">=8.0.0"
   },
+  
   "dependencies": {
     "antd-mobile": "^2.2.6",
     "prop-types": "^15.6.2",

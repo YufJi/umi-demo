@@ -11,6 +11,7 @@ export default class Index extends PureComponent {
     return (
       <Fragment>
         <Header title="超级班车" />
+        <Loading />
         <div id="scroll-view" className={`${styles.wrap} w100 flex-one ova`}>
           <div className={styles.banner}>
             <Carousel

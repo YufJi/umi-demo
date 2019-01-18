@@ -1,10 +1,10 @@
-
-export default (...args) => {
-  if(args.length === 0) {
+// compose function
+export default (...funcs) => {
+  if(funcs.length === 0) {
     return arg => arg;
   }
-  if(args.length === 1) {
-    return args[0];
+  if(funcs.length === 1) {
+    return funcs[0];
   }
-  return args.reduce((pre, cur) => (...funcs) => pre(cur(...funcs)));
+  return funcs.reduce((pre, cur) => (...args) => pre(cur(...args)));
 };

@@ -9,9 +9,10 @@ import styles from './index.less';
 import compose from '@/hoc/compose';
 import withHd from '@/hoc/withHd';
 import withQuery from '@/hoc/withQuery';
+import pipeline from '@/hoc/pipeline';
 
-
-@compose(withHd, withQuery)
+// @compose(withHd, withQuery)
+@pipeline
 class Index extends PureComponent {
   render() {
     console.log(this.props);
@@ -55,3 +56,5 @@ class Index extends PureComponent {
 }
 
 export default Index;
+
+// export default pipeline(Index);

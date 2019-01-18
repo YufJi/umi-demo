@@ -6,8 +6,15 @@ import Loading from '@/components/common/Loading';
 
 import styles from './index.less';
 
-export default class Index extends PureComponent {
+import compose from '@/hoc/compose';
+import withHd from '@/hoc/withHd';
+import withQuery from '@/hoc/withQuery';
+
+
+@compose(withHd, withQuery)
+class Index extends PureComponent {
   render() {
+    console.log(this.props);
     return (
       <Fragment>
         <Header title="超级班车" />
@@ -46,3 +53,5 @@ export default class Index extends PureComponent {
     );
   }
 }
+
+export default Index;

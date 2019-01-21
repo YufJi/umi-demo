@@ -11,8 +11,9 @@ import withHd from '@/hoc/withHd';
 import withQuery from '@/hoc/withQuery';
 import pipeline from '@/hoc/pipeline';
 
+
 // @compose(withHd, withQuery)
-@pipeline
+@pipeline(withHd, withQuery)
 class Index extends PureComponent {
   render() {
     console.log(this.props);

@@ -1,7 +1,10 @@
 
-import withHd from '@/hoc/withHd';
-import withQuery from '@/hoc/withQuery';
-
-export default (Component) => {
-  return Component |> withQuery;
+export default (...funcs) => {
+  if(funcs.length === 0) {
+    return arg => arg;
+  }
+  if(funcs.length === 1) {
+    return funcs[0];
+  }
+  return funcs.reduce((pre, cur) => (...args) => cur(...args) |> pre);
 };
